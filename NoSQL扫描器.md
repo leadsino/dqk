@@ -1,5 +1,7 @@
 # NoSQL扫描器(mongoaudit)
 
+主机：10.10.100.88     root:pldsec
+
 ## 1. mongoaudit（一款测试工具）
 
  	github地址：https://github.com/stampery/mongoaudit
@@ -164,37 +166,37 @@
 
 ### 2.1 扫描过程
 
-![1554704003823](E:/GitHub/work/typora-user-images/1554704003823.png)
+![1554704003823](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704003823.png?raw=true)
 
 #### 	2.1.1 公网扫描
 
 ​	（1）通过shodan扫描公网IP（暴露在公网上的存在Mongod服务的主机）
 
-![1554704409732](E:/GitHub/work/typora-user-images/1554704409732.png)
+![1554704409732](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704409732.png?raw=true)
 
 ​	（2）扫描指定的主机
 
-![1554704563417](E:/GitHub/work/typora-user-images/1554704563417.png)
+![1554704563417](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704563417.png?raw=true)
 
 ​	获取mongodb版本及平台
 
-![1554704767557](E:/GitHub/work/typora-user-images/1554704767557.png)
+![1554704767557](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704767557.png?raw=true)
 
 ​	存在的数据库、表及用户（做了安全配置的数据库无法查看）
 
-![1554704881341](E:/GitHub/work/typora-user-images/1554704881341.png)
+![1554704881341](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704881341.png?raw=true)
 
 ​	复制指定的数据库（需要对应的用户名密码）
 
-![1554704984759](E:/GitHub/work/typora-user-images/1554704984759.png)
+![1554704984759](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554704984759.png?raw=true)
 
 #### 	2.1.2 指定IP扫描
 
-![1554705387183](E:/GitHub/work/typora-user-images/1554705387183.png)
+![1554705387183](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554705387183.png?raw=true)
 
 ​	获取版本及平台，存在的数据库、表及用户，复制数据库过程与2.1.2相同。
 
-![1554705426108](E:/GitHub/work/typora-user-images/1554705426108.png)
+![1554705426108](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554705426108.png?raw=true)
 
 #### 	2.1.3  注入攻击
 
@@ -234,9 +236,9 @@
 
 ​	github地址：https://github.com/torque59/Nosql-Exploitation-Framework/wiki/Usage
 
-![1554715334893](E:/GitHub/work/typora-user-images/1554715334893.png)
+![1554715334893](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554715334893.png?raw=true)
 
-![1554715363536](E:/GitHub/work/typora-user-images/1554715363536.png)
+![1554715363536](https://github.com/leadsino/dqk/blob/master/typora-user-images/1554715363536.png?raw=true)
 
 # 附录
 
