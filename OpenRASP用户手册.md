@@ -133,9 +133,9 @@ java -javaagent:"/opt/spring-boot/rasp/rasp.jar" -Dlog4j.rasp.configuration="fil
 
 ​	在每个测试用例里，我们都增加了说明，即如何模拟正常的请求，和不正常的攻击请求。具体按照里面提供的 `CURL` 命令进行测试即可。安装测试用例后，你将会看到类似这样的页面:
 
-![1553752568126](E:/GitHub/work/typora-user-images/1553752568126.png)
+![1553752568126](https://github.com/leadsino/dqk/blob/master/typora-user-images/7.png?raw=true)
 
-​	![1554184549028](E:/GitHub/work/typora-user-images/1554184549028.png)
+​	![1554184549028](https://github.com/leadsino/dqk/blob/master/typora-user-images/6.png?raw=true)
 
 
 
@@ -330,23 +330,23 @@ RUN cd /tmp \
 
 ​	点击后台右上角的 **添加主机 -> 基础信息**，可获取安装 RASP agent 所需要的 `appid/appsecret/backendurl`三个关键字段:
 
-![1553755125636](E:/GitHub/work/typora-user-images/1553755125636.png)
+![1553755125636](https://github.com/leadsino/dqk/blob/master/typora-user-images/4.png?raw=true)
 
 #### 	3.2.2 添加白名单
 
 ​	在 **系统设置 -> 黑白名单 -> 添加** 下面，可以增加检测点白名单。以 phpMyAdmin 应用为例，如果我们不想对 `10.10.50.52/phpMyAdmin/` 这个URL进行SQL注入检测，可以参考下图配置，点击保存后生效。
 
-![1553755300684](E:/GitHub/work/typora-user-images/1553755300684.png)
+![1553755300684](https://github.com/leadsino/dqk/blob/master/typora-user-images/3.png?raw=true)
 
 #### 	3.2.3 修改登录密码
 
 在 **系统设置 -> 登录认证 -> 修改登录密码** 下面，可以设置新的后台登录密码。目前我们不支持多用户模式，未来会逐步完善。对于新密码，我们的要求是 8-50 位，且同时包含数字和字符，不符合规范的密码会被拒绝。
 
-![1553755400558](E:/GitHub/work/typora-user-images/1553755400558.png)
+![1553755400558](https://github.com/leadsino/dqk/blob/master/typora-user-images/2.png?raw=true)
 
 #### 	3.2.4 配置邮件报警
 
 ​	在界面配置即可。一般情况下，端口写 `25` 即可，如果服务器支持 STARTTLS，会自动开启加密。如果你使用 465 端口，才需要勾选强制TLS。
 
-![1553755573864](E:/GitHub/work/typora-user-images/1553755573864.png)
+![1553755573864](https://github.com/leadsino/dqk/blob/master/typora-user-images/7.png?raw=true)
 
